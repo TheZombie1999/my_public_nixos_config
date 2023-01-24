@@ -1,0 +1,43 @@
+# Close Window
+alt + shift + q
+    i3-msg kill
+    
+# Navigation
+alt + {_, shift} + {h, j, k, l}
+    i3-msg {focus, move} {left, down, up, right}
+        
+# Fullscreen
+alt + f
+    i3-msg fullscreen toggle
+
+# Split
+alt + {_, shift} + v
+    i3-msg split {v, h}
+        
+# Change layout of container
+alt + { w, e}
+    i3-msg layout { tabbed, toggle split}
+        
+# Floating 
+alt + {_, shift} + space 
+    i3-msg {focus mode_toggle, floating toggle}
+
+alt + b
+    sel=$(i3-msg -t get_workspaces | jq -r -S '.[].name' | dmenu) ; i3-msg workspace $sel 
+
+alt + shift + b
+    i3-msg move workspace to output next
+
+alt + c
+    sel=$(i3-msg -t get_workspaces | jq -r -S '.[].name' | dmenu) ; i3-msg move container to workspace $sel 
+
+# Vim Marks
+alt + m
+    sel=$(i3-msg -t get_marks | jq -r -S .[] | dmenu); i3-msg [con_mark="$sel"] focus
+
+alt + shift + m
+    sel=$(echo "" | dmenu) ; i3-msg mark $sel 
+
+    
+
+    

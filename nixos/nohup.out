@@ -1,0 +1,17 @@
+polybar-msg: No active ipc channels
+---
+Bars launched...
+polybar|notice:  Parsing config file: /etc/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 230484)
+polybar|notice:  Loading module 'spacer' of type 'custom/text'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink alsa_output.usb-Conexant_Hi_Res_USB-C_AUDIO_000000000000-00.analog-stereo
+polybar|notice:  Loading module 'microstar-up' of type 'custom/script'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'filesystem' of type 'internal/fs'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'eth' of type 'internal/network'
+polybar|notice:  module/eth: Discovered wired interface enp7s0
+polybar|notice:  Loading module 'spacer' of type 'custom/text'
+polybar|notice:  Loaded 8 modules
+polybar|notice:  Loaded font "JuliaMono" (name=JuliaMono, offset=2, file=/nix/store/yahgm0nkk7gb82r60q19l751m01ly1hb-JuliaMono-ttf-0.046/share/fonts/truetype/JuliaMono-Regular.ttf)

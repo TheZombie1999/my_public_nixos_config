@@ -1,0 +1,21 @@
+
+# Moab Font Size
+
+ font:
+  normal:
+    family: "JuliaMono"
+    style: Regular
+
+  # bold:
+    # family: PowerlineSymbolds
+    # style: Bold
+
+  # italic:
+    # family: PowerlineSymbolds
+    # style: Italic
+
+  # bold_italic:
+    # family:  PowerlineSymbolds
+    # style: Bold Italic
+  # size: 9   
+    

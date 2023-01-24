@@ -1,0 +1,1 @@
+WARN  2022-08-19T17:58:47.168 13251 log_path_init:95: Failed to create directory /home/tim/.cache for writing logs: Unknown system error 1

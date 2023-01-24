@@ -1,0 +1,50 @@
+
+# Reload Config
+alt + F1
+    kill -s SIGUSR1 -- "$(pidof sxhkd)"
+
+# Run Dmenu
+alt + d
+    dmenu_run
+
+# Display Help
+alt + i
+    notify-send "General Keybindings" "$(cat ~/.config/sxhkd/sxhkdrc)"
+alt + shift + i
+    notify-send "i3 Keybindings" "$(cat ~/.config/sxhkd/i3_sxhkdrc)"
+
+alt + p
+    clipmenu
+
+alt + Return
+    alacritty
+    
+alt + t
+    notify-send "Time"  "$(date +"%T")"
+alt + n ; l
+    i3-msg focus left
+
+alt + n ; t
+    ~/.config/xmenu/xmenu.sh
+    
+super + space
+    xsecurelock
+
+alt + y
+    tdrop -ma -x 25% -y 40% -w 50% -h 30% -n 1 tabbed alacritty --embed
+
+alt + q
+    tdrop -ma -x 25% -y 10% -w 50% -h 60% -n 0 alacritty -o window.opacity=0.5 -e ranger
+
+alt + g 
+    dm-tool switch-to-greeter
+
+# Remap Arrow keys    
+super + h
+    xdotool keyup h key --clearmodifiers Left
+super + l
+    xdotool keyup l key --clearmodifiers Right
+super + j
+    xdotool keyup j key --clearmodifiers Down
+super + k
+    xdotool keyup k key --clearmodifiers Up
